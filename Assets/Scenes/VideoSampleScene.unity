@@ -673,8 +673,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 50
-    m_Right: 50
+    m_Left: 25
+    m_Right: 25
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 3
@@ -685,7 +685,7 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
-  m_IsReverse: 0
+  m_IsReverse: 1
 --- !u!114 &601447981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1175,12 +1175,12 @@ MonoBehaviour:
   m_ChildAlignment: 3
   m_Spacing: 25
   m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 0
+  m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
-  m_IsReverse: 0
+  m_IsReverse: 1
 --- !u!114 &827454491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1237,7 +1237,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &846601705
 GameObject:
@@ -1466,7 +1466,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 859043575}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7c07e89e89f74d77a3c05b4b7cee766, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f5279f341aa813de973d2dbc3109e35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   toggleEnglish: {fileID: 1648454238}
@@ -2063,12 +2063,12 @@ MonoBehaviour:
   m_ChildAlignment: 3
   m_Spacing: 25
   m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 0
+  m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
-  m_IsReverse: 0
+  m_IsReverse: 1
 --- !u!114 &1402093402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2125,7 +2125,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &1621201805
 GameObject:
@@ -2431,12 +2431,12 @@ MonoBehaviour:
   m_ChildAlignment: 3
   m_Spacing: 25
   m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 0
+  m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
-  m_IsReverse: 0
+  m_IsReverse: 1
 --- !u!114 &1648454238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2493,7 +2493,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &1687592646
 GameObject:
@@ -2817,12 +2817,12 @@ MonoBehaviour:
   m_ChildAlignment: 3
   m_Spacing: 25
   m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 0
+  m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
-  m_IsReverse: 0
+  m_IsReverse: 1
 --- !u!114 &1770095142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2879,7 +2879,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &1778243879
 GameObject:

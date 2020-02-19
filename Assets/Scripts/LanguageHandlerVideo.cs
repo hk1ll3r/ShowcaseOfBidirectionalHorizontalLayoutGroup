@@ -7,7 +7,7 @@ using TMPro;
 
 using NoSuchStudio.UI;
 
-public class LanguageHandler : MonoBehaviour
+public class LanguageHandlerVideo : MonoBehaviour
 {
     [SerializeField] private Toggle toggleEnglish;
     [SerializeField] private Toggle toggleArabic;
@@ -17,7 +17,8 @@ public class LanguageHandler : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textBack;
     [SerializeField] private TextMeshProUGUI textTitle;
 
-    [SerializeField] private BidirHorizontalLayoutGroup panelTitle;
+    // [SerializeField] private BidirHorizontalLayoutGroup panelTitle;
+    [SerializeField] private HorizontalLayoutGroup panelTitle;
 
     private Toggle[] allToggles;
 
@@ -28,20 +29,12 @@ public class LanguageHandler : MonoBehaviour
         ["ar"] = "ﻋﻮدة",
     };
     private static Dictionary<string, string> titleTexts = new Dictionary<string, string>() {
-        ["en"] = "egaP sgnitteS egaugnaL",
-        ["fa"] = "ﺻﻔﺤﻪ ﺗﻨﻈﯿﻤﺎت زﺑﺎن",
-        ["ar"] = "ﺻﻔﺤﺔ إﻋﺪادات اﻟﻠﻐﺔ",
-        ["es"] = "amoidi ed nóicarugifnoc ed anigáP",
+        ["en"] = "egaP sgnitteS",
+        ["fa"] = "ﺻﻔﺤﻪ ﺗﻨﻈﯿﻤﺎت",
+        ["ar"] = "ﺻﻔﺤﺔ إﻋﺪادات",
+        ["es"] = "nóicarugifnoc ed anigáP",
     };
     void Awake() {
-        Init();
-    }
-
-    void OnValidate() {
-        Init();
-    }
-
-    void Init() {
         allToggles = new Toggle[] {
             toggleEnglish,
             toggleArabic,
@@ -63,15 +56,17 @@ public class LanguageHandler : MonoBehaviour
 
 
     private void SyncWithToggles() {
-        bool rtl = true;
+        /*bool rtl = true;
         if (toggleEnglish.isOn || toggleSpanish.isOn) {
             rtl = false;
         }
         foreach (Toggle t in allToggles) {
             BidirHorizontalLayoutGroup bidirLayoutGroup = t.GetComponent<BidirHorizontalLayoutGroup>();
             bidirLayoutGroup.IsReverse = rtl;
-            // bidirLayoutGroup.childAlignment = rtl ? TextAnchor.MiddleRight : TextAnchor.MiddleLeft;
+            //bidirLayoutGroup.childAlignment = rtl ? TextAnchor.MiddleRight : TextAnchor.MiddleLeft;
         }
+        panelTitle.IsReverse = rtl;*/
+        
 
         if (toggleEnglish.isOn) {
             textBack.text = backTexts["en"];
@@ -87,7 +82,6 @@ public class LanguageHandler : MonoBehaviour
             textTitle.text = titleTexts["fa"];
         }
 
-        panelTitle.IsReverse = rtl;
     }
 
     public void OnToggleClick(bool b) {

@@ -7,7 +7,7 @@ using TMPro;
 
 using NoSuchStudio.UI;
 
-public class LanguageHandler : MonoBehaviour
+public class LanguageHandler1 : MonoBehaviour
 {
     [SerializeField] private Toggle toggleEnglish;
     [SerializeField] private Toggle toggleArabic;
@@ -28,20 +28,12 @@ public class LanguageHandler : MonoBehaviour
         ["ar"] = "ﻋﻮدة",
     };
     private static Dictionary<string, string> titleTexts = new Dictionary<string, string>() {
-        ["en"] = "egaP sgnitteS egaugnaL",
-        ["fa"] = "ﺻﻔﺤﻪ ﺗﻨﻈﯿﻤﺎت زﺑﺎن",
-        ["ar"] = "ﺻﻔﺤﺔ إﻋﺪادات اﻟﻠﻐﺔ",
-        ["es"] = "amoidi ed nóicarugifnoc ed anigáP",
+        ["en"] = "egaP sgnitteS",
+        ["fa"] = "ﺻﻔﺤﻪ ﺗﻨﻈﯿﻤﺎت",
+        ["ar"] = "ﺻﻔﺤﺔ إﻋﺪادات",
+        ["es"] = "nóicarugifnoc ed anigáP",
     };
     void Awake() {
-        Init();
-    }
-
-    void OnValidate() {
-        Init();
-    }
-
-    void Init() {
         allToggles = new Toggle[] {
             toggleEnglish,
             toggleArabic,
